@@ -609,9 +609,18 @@ body {
 
 .contact__solanasail {
     display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     width: 45%;
     height: 100%;
     margin: 0 auto;
+}
+
+.contact__yacht {
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
 }
 
 .contact__img {
