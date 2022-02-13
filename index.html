@@ -15,44 +15,48 @@
     <meta content="website" property="og:type">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;900&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/ed88074e78.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header class="header">
+    <header class="header header__animation">
         <div class="header__background"></div>
         <div class="header__logo">
-            <div class="header__logo--sign"></div>
-            <div class="header__logo--txt"></div>
+            <div class="header__logo--sign">
+                <img src="img/SolanaSail_logo.png" class="header__logo--image" alt="SolanaSail logo">
+            </div>
+            <div class="header__logo--txt">
+                <img src="img/SolanaSail_txt.svg" class="header__logo--svg" alt="SolanaSail logo">
+            </div>
             <h2 class="header__logo--subtxt">The first ever community SPL token built on Solana</h2>
         </div>
     </header>
 
     <nav class="nav">
         <div class="navigation">
-            <ul class="menu">
+            <ul class="navigation__menu">
                 <li>
-                    <a href="#trading" class="menu__link">trading</a>
+                    <a href="#trading" class="menu__link menu__link--goto">trading</a>
                 </li>
                 <li>
-                    <a href="#tokenomic" class="menu__link">tokenomic</a>
+                    <a href="#tokenomic" class="menu__link menu__link--goto">tokenomic</a>
                 </li>
                 <li>
-                    <a href="#ecosystem" class="menu__link">ecosystem</a>
+                    <a href="#ecosystem" class="menu__link menu__link--goto">ecosystem</a>
                 </li>
                 <li>
-                    <a href="#roadmap" class="menu__link">roadmap</a>
+                    <a href="#roadmap" class="menu__link menu__link--goto">roadmap</a>
                 </li>
                 <li>
-                    <a href="#faq" class="menu__link">faq</a>
+                    <a href="#faq" class="menu__link menu__link--goto">faq</a>
                 </li>
                 <li>
                     <a href="docs/SolanaSail_WP_0_1_0.pdf" target="_blank" class="menu__link">whitepaper</a>
                 </li>
                 <li>
-                    <a href="#contact" class="menu__link">contact</a>
+                    <a href="#contact" class="menu__link menu__link--goto">contact</a>
                 </li>
             </ul>
         </div>
@@ -67,89 +71,83 @@
                 <h1 class="trading__sail__title">TRADE $SAIL TOKEN</h1>
                 <p class="trading__sail__text">SAIL is available for trading on the following exchanges</p>
                 <div class="trading__sail__list">
-                    <ul>
-                        <li>
-                            <a href="https://dex.aldrin.com/chart/spot/SAIL_USDC" target="_blank"
-                                class="trading__link">aldrin</a>
-                        </li>
-                        <li>
-                            <a href="https://catodex.com/#/market/6hwK66FfUdyhncdQVxWFPRqY8y6usEvzekUaqtpKEKLr"
-                                target="_blank" class="trading__link">cato</a>
-                        </li>
-                        <li>
-                            <a href="https://trade.dexlab.space/#/market/6hwK66FfUdyhncdQVxWFPRqY8y6usEvzekUaqtpKEKLr"
-                                target="_blank" class="trading__link">dex lab</a>
-                        </li>
-                        <li>
-                            <a href="https://jup.ag/swap/USDC-SAIL" target="_blank" class="trading__link">jupiter</a>
-                        </li>
-                        <li>
-                            <a href="https://www.lanadex.com/#/market/6hwK66FfUdyhncdQVxWFPRqY8y6usEvzekUaqtpKEKLr"
-                                target="_blank" class="trading__link">lana dex</a>
-                        </li>
-                        <li>
-                            <a href="https://dex.pigeonsol.xyz/#/market/6hwK66FfUdyhncdQVxWFPRqY8y6usEvzekUaqtpKEKLr"
-                                target="_blank" class="trading__link">pigeon dex</a>
-                        </li>
-                        <li>
-                            <a href="https://raydium.io/swap/?from=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v&to=6kwTqmdQkJd8qRr9RjSnUX9XJ24RmJRSrU1rsragP97Y"
-                                target="_blank" class="trading__link">raydium</a>
-                        </li>
-                        <li>
-                            <a href="https://solapeswap.io/#/market/6hwK66FfUdyhncdQVxWFPRqY8y6usEvzekUaqtpKEKLr"
-                                target="_blank" class="trading__link">solape</a>
-                        </li>
-                        <li>
-                            <a href="https://swap.symmetry.fi/" target="_blank" class="trading__link">symetry</a>
-                        </li>
-                        <li>
-                            <a href="https://www.bitmart.com/trade/en?symbol=SAIL_USDT&layout=basic" target="_blank"
-                                class="trading__link">bitmart</a>
-                        </li>
-                        <li>
-                            <a href="https://www.bitrue.com/trade/sail_usdt" target="_blank"
-                                class="trading__link">bitrue</a>
-                        </li>
-                    </ul>
+                    <div class="trading__container">
+                        <a href="https://dex.aldrin.com/chart/spot/SAIL_USDC" target="_blank"
+                            class="trading__link">aldrin</a>
+                    </div>
+                    <div class="trading__container">
+                        <a href="https://catodex.com/#/market/6hwK66FfUdyhncdQVxWFPRqY8y6usEvzekUaqtpKEKLr"
+                            target="_blank" class="trading__link">cato</a>
+                    </div>
+                    <div class="trading__container">
+                        <a href="https://trade.dexlab.space/#/market/6hwK66FfUdyhncdQVxWFPRqY8y6usEvzekUaqtpKEKLr"
+                            target="_blank" class="trading__link">dex lab</a>
+                    </div>
+                    <div class="trading__container">
+                        <a href="https://jup.ag/swap/USDC-SAIL" target="_blank" class="trading__link">jupiter</a>
+                    </div>
+                    <div class="trading__container">
+                        <a href="https://www.lanadex.com/#/market/6hwK66FfUdyhncdQVxWFPRqY8y6usEvzekUaqtpKEKLr"
+                            target="_blank" class="trading__link">lana dex</a>
+                    </div>
+                    <div class="trading__container">
+                        <a href="https://dex.pigeonsol.xyz/#/market/6hwK66FfUdyhncdQVxWFPRqY8y6usEvzekUaqtpKEKLr"
+                            target="_blank" class="trading__link">pigeon dex</a>
+                    </div>
+                    <div class="trading__container">
+                        <a href="https://raydium.io/swap/?from=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v&to=6kwTqmdQkJd8qRr9RjSnUX9XJ24RmJRSrU1rsragP97Y"
+                            target="_blank" class="trading__link">raydium</a>
+                    </div>
+                    <div class="trading__container">
+                        <a href="https://solapeswap.io/#/market/6hwK66FfUdyhncdQVxWFPRqY8y6usEvzekUaqtpKEKLr"
+                            target="_blank" class="trading__link">solape</a>
+                    </div>
+                    <div class="trading__container">
+                        <a href="https://swap.symmetry.fi/" target="_blank" class="trading__link">symetry</a>
+                    </div>
+                    <div class="trading__container">
+                        <a href="https://www.bitmart.com/trade/en?symbol=SAIL_USDT&layout=basic" target="_blank"
+                            class="trading__link">bitmart</a>
+                    </div>
+                    <div class="trading__container">
+                        <a href="https://www.bitrue.com/trade/sail_usdt" target="_blank"
+                            class="trading__link">bitrue</a>
+                    </div>
                 </div>
             </div>
             <div class="trading__gsail">
                 <h1 class="trading__gsail__title">TRADE $gSAIL TOKEN</h1>
-                <p class="trading__gsail_text">gSAIL is available for trading on the following exchanges</p>
+                <p class="trading__gsail__text">gSAIL is available for trading on the following exchanges</p>
                 <div class="trading__gsail__list">
-                    <ul>
-                        <li>
-                            <a href="https://dex.aldrin.com/chart/spot/gSAIL_USDC" target="_blank"
-                                class="trading__link">aldrin</a>
-                        </li>
-                        <li>
-                            <a href="https://catodex.com/#/market/2zkPyHgQkKG6qJED6MTbjfCfUbZeT9VFwLm1Ld9nKxRp"
-                                target="_blank" class="trading__link">cato</a>
-                        </li>
-                        <li>
-                            <a href="https://trade.dexlab.space/#/market/2zkPyHgQkKG6qJED6MTbjfCfUbZeT9VFwLm1Ld9nKxRp"
-                                target="_blank" class="trading__link">dex lab</a>
-                        </li>
-                        <li>
-                            <a href="https://swap.symmetry.fi/" target="_blank" class="trading__link">symetry</a>
-                        </li>
-                        <li>
-                            <a href="https://www.bitrue.com/trade/gsail_usdt" target="_blank"
-                                class="trading__link">bitrue</a>
-                        </li>
-                    </ul>
+                    <div class="trading__container">
+                        <a href="https://dex.aldrin.com/chart/spot/gSAIL_USDC" target="_blank"
+                            class="trading__link">aldrin</a>
+                    </div>
+                    <div class="trading__container">
+                        <a href="https://catodex.com/#/market/2zkPyHgQkKG6qJED6MTbjfCfUbZeT9VFwLm1Ld9nKxRp"
+                            target="_blank" class="trading__link">cato</a>
+                    </div>
+                    <div class="trading__container">
+                        <a href="https://trade.dexlab.space/#/market/2zkPyHgQkKG6qJED6MTbjfCfUbZeT9VFwLm1Ld9nKxRp"
+                            target="_blank" class="trading__link">dex lab</a>
+                    </div>
+                    <div class="trading__container">
+                        <a href="https://swap.symmetry.fi/" target="_blank" class="trading__link">symetry</a>
+                    </div>
+                    <div class="trading__container">
+                        <a href="https://www.bitrue.com/trade/gsail_usdt" target="_blank"
+                            class="trading__link">bitrue</a>
+                    </div>
                 </div>
             </div>
             <div class="trading__liquidity">
                 <h1 class="trading__liquidity__title">LIQUIDITY AND FARMING</h1>
-                <p class="trading__liquidity_text">Earn while holding your SolanaSail tokens (SAIL and gSAIL)</p>
+                <p class="trading__liquidity__text">Earn while holding your SolanaSail tokens (SAIL and gSAIL)</p>
                 <div class="trading__liquidity__list">
-                    <ul>
-                        <li>
-                            <a href="https://app.atrix.finance/#/farms/XSp6EtDr8qwELa7GV6MNinxE1WqDd6qbvTyE2FLHD24/stake"
-                                target="_blank" class="trading__link">atrix</a>
-                        </li>
-                    </ul>
+                    <div class="trading__container">
+                        <a href="https://app.atrix.finance/#/farms/XSp6EtDr8qwELa7GV6MNinxE1WqDd6qbvTyE2FLHD24/stake"
+                            target="_blank" class="trading__link">atrix</a>
+                    </div>
                 </div>
             </div>
             <div class="trading__track">
@@ -158,113 +156,122 @@
                     cap, info, markets and more. Track SAIL and gSAIL among Yield Farming and Liquidity Pool performance
                     on Solana blockchain.</p>
                 <div class="trading__track__list">
-                    <ul>
-                        <li>
-                            <a href="https://sonar.watch/" target="_blank" class="trading__link">sonat watch</a>
-                        </li>
-                        <li>
-                            <a href="https://apeboard.finance/dashboard" target="_blank"
-                                class="trading__link">apeboard</a>
-                        </li>
-                        <li>
-                            <a href="https://app.step.finance/#/dashboard" target="_blank" class="trading__link">step
-                                finance</a>
-                        </li>
-                        <li>
-                            <a href="https://www.coingecko.com/en/coins/sail" target="_blank"
-                                class="trading__link">coingecko sail</a>
-                        </li>
-                        <li>
-                            <a href="https://www.coingecko.com/en/coins/solanasail-governance-token" target="_blank"
-                                class="trading__link">coingecko gsail</a>
-                        </li>
-                        <li>
-                            <a href="https://coinmarketcap.com/currencies/solanasail/" target="_blank"
-                                class="trading__link">coinmarketcap sail</a>
-                        </li>
-                        <li>
-                            <a href="https://coinmarketcap.com/currencies/solanasail-governance-token/" target="_blank"
-                                class="trading__link">coinmarketcap gsail</a>
-                        </li>
-                        <li>
-                            <a href="https://nomics.com/assets/sail-sail" target="_blank" class="trading__link">nomics
-                                sail</a>
-                        </li>
-                        <li>
-                            <a href="https://nomics.com/assets/gsail-solanasail-governance-token" target="_blank"
-                                class="trading__link">nomics
-                                gsail</a>
-                        </li>
-                        <li>
-                            <a href="https://blockfolio.com/" target="_blank" class="trading__link">ftx</a>
-                        </li>
-                    </ul>
+                    <div class="trading__container">
+                        <a href="https://sonar.watch/" target="_blank" class="trading__link">sonat watch</a>
+                    </div>
+                    <div class="trading__container">
+                        <a href="https://apeboard.finance/dashboard" target="_blank" class="trading__link">apeboard</a>
+                    </div>
+                    <div class="trading__container">
+                        <a href="https://app.step.finance/#/dashboard" target="_blank" class="trading__link">step
+                            finance</a>
+                    </div>
+                    <div class="trading__container">
+                        <a href="https://www.coingecko.com/en/coins/sail" target="_blank"
+                            class="trading__link">coingecko sail</a>
+                    </div>
+                    <div class="trading__container">
+                        <a href="https://www.coingecko.com/en/coins/solanasail-governance-token" target="_blank"
+                            class="trading__link">coingecko gsail</a>
+                    </div>
+                    <div class="trading__container">
+                        <a href="https://coinmarketcap.com/currencies/solanasail/" target="_blank"
+                            class="trading__link">coinmarketcap sail</a>
+                    </div>
+                    <div class="trading__container">
+                        <a href="https://coinmarketcap.com/currencies/solanasail-governance-token/" target="_blank"
+                            class="trading__link">coinmarketcap gsail</a>
+                    </div>
+                    <div class="trading__container">
+                        <a href="https://nomics.com/assets/sail-sail" target="_blank" class="trading__link">nomics
+                            sail</a>
+                    </div>
+                    <div class="trading__container">
+                        <a href="https://nomics.com/assets/gsail-solanasail-governance-token" target="_blank"
+                            class="trading__link">nomics
+                            gsail</a>
+                    </div>
+                    <div class="trading__container">
+                        <a href="https://blockfolio.com/" target="_blank" class="trading__link">ftx</a>
+                    </div>
                 </div>
             </div>
         </section>
         <section id="tokenomic" class="tokenomic">
-            <h1 class="tokenomic__title">TOKENOMIC</h1>
-            <p class="tokenomic__text">21 millions of SAIL tokens airdrop is now complete, but the SolanaSail ecosystem
-                is a huge project. It will take time to build it but the challenge is really promising.</p>
-            <div class="tokenomic__sail"></div>
-            <div class="tokenomic__gsail"></div>
+            <div class="tokenomic__sail_gsail">
+                <h1 class="tokenomic__title">TOKENOMIC</h1>
+                <p class="tokenomic__text">21 millions of SAIL tokens airdrop is now complete, but the SolanaSail
+                    ecosystem
+                    is a huge project. It will take time to build it but the challenge is really promising.</p>
+            </div>
         </section>
         <section id="ecosystem" class="ecosystem">
-            <h1 class="ecosystem__title">SOLANASAIL ECOSYSTEM</h1>
-            <p class="ecosystem__text">SAIL will be the main utility token of a new ecosystem build on Solana. SAIL
-                Staking to get gSAIL will be available in Phase II.
-                <br><br> gSAIL will be the SolanaSail ecosystem token on the 4 platforms: Governance, Vaults, DeFi and
-                NFTs
-                Marketplace. gSAIL staking feature will be available on Phase I. The community will be able to stake
-                gSAIL and get gSAIL rewards.</p>
-            <div class="ecosystem__sail_gsail"></div>
+            <div class="ecosystem__sail_gsail">
+                <h1 class="ecosystem__title">SOLANASAIL ECOSYSTEM</h1>
+                <p class="ecosystem__text">SAIL will be the main utility token of a new ecosystem build on Solana. SAIL
+                    Staking to get gSAIL will be available in Phase II.
+                    <br><br> gSAIL will be the SolanaSail ecosystem token on the 4 platforms: Governance, Vaults, DeFi
+                    and
+                    NFTs
+                    Marketplace. gSAIL staking feature will be available on Phase I. The community will be able to stake
+                    gSAIL and get gSAIL rewards.</p>
+            </div>
         </section>
         <section id="roadmap" class="roadmap">
-            <h1 class="roadmap__title">ROADMAP</h1>
-            <p class="roadmap__text">The Roadmap focuses on the development of the technology, operations
-                infrastructure, new partnerships, and marketing initiatives.</p>
-            <div class="roadmap__solanasail"></div>
+            <div class="roadmap__solanasail">
+                <h1 class="roadmap__title">ROADMAP</h1>
+                <p class="roadmap__text">The Roadmap focuses on the development of the technology, operations
+                    infrastructure, new partnerships, and marketing initiatives.</p>
+            </div>
         </section>
         <section id="faq" class="faq">
-            <h1 class="faq__title">FAQ</h1>
-            <h3 class="faq__question1">What SPL stands for?</h3>
-            <p class="faq__answer1">The Solana Program Library (SPL) is a collection of on-chain programs targeting the
-                Sealevel parallel runtime. These programs are tested against Solana’s implementation of Sealevel,
-                solana-runtime, and deployed to its mainnet. As others implement Sealevel, Solana will graciously accept
-                patches to ensure the programs here are portable across all implementations.</p>
-            <h3 class="faq__question2">Do you have any bulk discounts?</h3>
-            <p class="faq__answer2">Nope. 21 millions of SAIL tokens airdrop is now complete, but the Sail ecosystem is
-                a huge project. It will take time to build it but the challenge is really promising.</p>
-            <h3 class="faq__question3">When will your airdrop start?</h3>
-            <p class="faq__answer3">Airdrop took place on May 2021 and fully distrubuted 21 millions of tokens (100% of
-                the supply) randomly across the community. The team didn’t keep nor receive any token.</p>
-            <h3 class="faq__question4">What are the mint addresses of our tokens?</h3>
-            <p class="faq__answer4">SAIL mint address:
-                <br> 6kwTqmdQkJd8qRr9RjSnUX9XJ24RmJRSrU1rsragP97Y
-                <br><br> gSAIL v2 mint address:
-                <br> Gsai2KN28MTGcSZ1gKYFswUpFpS7EM9mvdR9c8f6iVXJ</p>
+            <div class="faq__solanasail">
+                <h1 class="faq__title">FAQ</h1>
+                <h3 class="faq__question">What SPL stands for?</h3>
+                <p class="faq__answer">The Solana Program Library (SPL) is a collection of on-chain programs targeting
+                    the
+                    Sealevel parallel runtime. These programs are tested against Solana’s implementation of Sealevel,
+                    solana-runtime, and deployed to its mainnet. As others implement Sealevel, Solana will graciously
+                    accept
+                    patches to ensure the programs here are portable across all implementations.</p>
+                <h3 class="faq__question">Do you have any bulk discounts?</h3>
+                <p class="faq__answer">Nope. 21 millions of SAIL tokens airdrop is now complete, but the Sail ecosystem
+                    is
+                    a huge project. It will take time to build it but the challenge is really promising.</p>
+                <h3 class="faq__question">When will your airdrop start?</h3>
+                <p class="faq__answer">Airdrop took place on May 2021 and fully distrubuted 21 millions of tokens (100%
+                    of
+                    the supply) randomly across the community. The team didn’t keep nor receive any token.</p>
+                <h3 class="faq__question">What are the mint addresses of our tokens?</h3>
+                <p class="faq__answer">SAIL mint address:
+                    <br> 6kwTqmdQkJd8qRr9RjSnUX9XJ24RmJRSrU1rsragP97Y
+                    <br><br> gSAIL v2 mint address:
+                    <br> Gsai2KN28MTGcSZ1gKYFswUpFpS7EM9mvdR9c8f6iVXJ</p>
+            </div>
         </section>
         <section id="contact" class="contact">
-            <h1 class="contact__title">CONTACT</h1>
-            <p class="contact__mail">
-                <a href="mailto:contact@solanasail.com">contact@solanasail.com></a>
-            </p>
-            <h3 class="contact_job">job</h3>
-            <p class="contact__job--mail">
-                <a href="mailto:job@solanasail.com">job@solanasail.com></a>
-            </p>
-            <h3 class="contact__marketing">marketing</h3>
-            <p class="contact__marketing--mail">
-                <a href="mailto:marketing@solanasail.com">marketing@solanasail.com></a>
-            </p>
-            <h3 class="contact_team">team</h3>
-            <p class="contact__team--mail">
-                <a href="mailto:team@solanasail.com">team@solanasail.com></a>
-            </p>
-            <h3 class="contact_founder">founder</h3>
-            <p class="contact__founder--mail">
-                <a href="mailto:founder@solanasail.com">founder@solanasail.com></a>
-            </p>
+            <div class="contact__solanasail">
+                <h1 class="contact__title">CONTACT</h1>
+                <p class="contact__mail">
+                    <a href="mailto:contact@solanasail.com">contact@solanasail.com</a>
+                </p>
+                <h3 class="contact__subtitle">job</h3>
+                <p class="contact__mail">
+                    <a href="mailto:job@solanasail.com">job@solanasail.com</a>
+                </p>
+                <h3 class="contact__subtitle">marketing</h3>
+                <p class="contact__mail">
+                    <a href="mailto:marketing@solanasail.com">marketing@solanasail.com</a>
+                </p>
+                <h3 class="contact__subtitle">team</h3>
+                <p class="contact__mail">
+                    <a href="mailto:team@solanasail.com">team@solanasail.com</a>
+                </p>
+                <h3 class="contact__subtitle">founder</h3>
+                <p class="contact__mail">
+                    <a href="mailto:founder@solanasail.com">founder@solanasail.com</a>
+                </p>
+            </div>
         </section>
     </main>
 

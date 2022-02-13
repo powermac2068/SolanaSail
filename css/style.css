@@ -20,5 +20,642 @@ body {
     scroll-behavior: smooth;
 }
 
-/* header */
+/* header start*/
 
+.header {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    opacity: 1;
+}
+
+.header__animation {
+    animation: background--animation 2s 1 ease-in-out;
+}
+
+@keyframes background--animation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {}
+}
+
+.header__background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/header_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+    z-index: 1;
+}
+
+.header__logo {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+    left: 52%;
+    top: 50%;
+    transform: translate(0,-50%);
+    width: 17vw;
+}
+
+.header__logo--sign {
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 4;
+}
+
+.header__logo--image {
+    width: 100%;
+}
+
+.header__logo--txt {
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 4;
+}
+
+.header__logo--svg {
+    width: 100%;
+    margin-top: 1vh;
+}
+
+.header__logo--subtxt {
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 1vh 0 0 0;
+    color: var(--yellow);
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-align: left;
+    line-height: 120%;
+    z-index: 4;
+}
+
+/* header end*/
+
+/* navigation start*/
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+    z-index: 2;
+    position: fixed;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: var(--blue);
+    z-index: 3;
+    animation: navigation--animation 1s 2s cubic-bezier(0.1, 0.8, 0.8, 1) both;
+}
+
+@keyframes navigation--animation {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {}
+}
+
+.navigation__menu {
+    display: flex;
+    list-style: none;
+    z-index: 5;
+}
+
+.menu__link {
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-decoration: none;
+    padding: 18px 18px;
+    color: var(--white);
+    transition: .1s;
+}
+
+.menu__link::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--darkblue);
+    transition: .1s;
+    z-index: -1;
+}
+
+.menu__link:hover::after {
+    height: 100%;
+}
+
+.menu__link:hover {
+    color: var(--blue);
+}
+
+.nav__top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    color: var(--blue);
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 5;
+    visibility: hidden;
+    transition-property: background-color, color;
+    transition-duration: .3s;
+}
+
+.nav__top:hover {
+    background-color: var(--blue);
+    color: var(--darkblue);
+}
+
+.nav__top--show {
+    visibility: visible;
+}
+
+.fa-angle-double-up {
+    font-size: 40px;
+}
+
+/* navigation end*/
+
+/* trading start*/
+
+.trading {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: url("../img/trade_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.trading::before {
+    content: "";
+    display: block;
+    height: 50px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--darkblue);
+}
+
+.trading__sail,
+.trading__gsail,
+.trading__liquidity,
+.trading__track {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.trading__sail__title,
+.trading__gsail__title,
+.trading__liquidity__title,
+.trading__track__title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 36px;
+    letter-spacing: 5px;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 100%;
+    color: var(--blue);
+    width: 100%;
+    margin: 50px 0 10px 0;
+    word-wrap: break-word;
+}
+
+.trading__sail__text,
+.trading__gsail__text,
+.trading__liquidity__text,
+.trading__track__text {
+    font-family: 'Lato',
+    sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 120%;
+    color: var(--yellow);
+    width: 100%;
+    margin: 0 0 20px 0;
+    word-wrap: break-word;
+}
+
+.trading__sail__list,
+.trading__gsail__list,
+.trading__liquidity__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 70%;
+}
+
+.trading__track__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+.trading__container {
+    display: flex;
+    width: 25%;
+    margin: 10px 20px 10px 0;
+}
+
+.trading__link {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    list-style: none;
+    color: var(--blue);
+}
+
+.trading__link:hover {
+    color: var(--yellow);
+}
+
+/* trading end*/
+
+/* tokenomic start*/
+
+.tokenomic {
+    width: 100%;
+    height: 1900px;
+    left: 0;
+    top: 0;
+    background-image: url("../img/tokenomics_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.tokenomic::before {
+    content: "";
+    display: block;
+    height: 50px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--darkblue);
+}
+
+.tokenomic__sail_gsail {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.tokenomic__title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 36px;
+    letter-spacing: 5px;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 100%;
+    color: var(--blue);
+    width: 100%;
+    margin: 50px 0 10px 0;
+    word-wrap: break-word;
+}
+
+.tokenomic__text {
+    font-family: 'Lato',
+        sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 120%;
+    color: var(--yellow);
+    width: 100%;
+    margin: 0 0 20px 0;
+    word-wrap: break-word;
+}
+
+/* tokenomic end*/
+
+/* ecosystem start*/
+
+.ecosystem {
+    width: 100%;
+    height: 1200px;
+    left: 0;
+    top: 0;
+    background-image: url("../img/ecosystem_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.ecosystem::before {
+    content: "";
+    display: block;
+    height: 50px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--darkblue);
+}
+
+.ecosystem__sail_gsail {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.ecosystem__title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 36px;
+    letter-spacing: 5px;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 100%;
+    color: var(--blue);
+    width: 100%;
+    margin: 50px 0 10px 0;
+    word-wrap: break-word;
+}
+
+.ecosystem__text {
+    font-family: 'Lato',
+        sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 120%;
+    color: var(--yellow);
+    width: 100%;
+    margin: 0 0 20px 0;
+    word-wrap: break-word;
+}
+
+/* ecosystem end*/
+
+/* roadmap start*/
+
+.roadmap {
+    width: 100%;
+    height: 900px;
+    left: 0;
+    top: 0;
+    background-image: url("../img/roadmap_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.roadmap::before {
+    content: "";
+    display: block;
+    height: 50px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--darkblue);
+}
+
+.roadmap__solanasail {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.roadmap__title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 36px;
+    letter-spacing: 5px;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 100%;
+    color: var(--blue);
+    width: 100%;
+    margin: 50px 0 10px 0;
+    word-wrap: break-word;
+}
+
+.roadmap__text {
+    font-family: 'Lato',
+        sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 120%;
+    color: var(--yellow);
+    width: 100%;
+    margin: 0 0 20px 0;
+    word-wrap: break-word;
+}
+
+/* roadmap end*/
+
+/* faq start*/
+
+.faq {
+    width: 100%;
+    height: 700px;
+    left: 0;
+    top: 0;
+    background-image: url("../img/faq_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.faq::before {
+    content: "";
+    display: block;
+    height: 50px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--darkblue);
+}
+
+.faq__solanasail {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.faq__title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 36px;
+    letter-spacing: 5px;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 100%;
+    color: var(--blue);
+    width: 100%;
+    margin: 50px 0 10px 0;
+    word-wrap: break-word;
+}
+
+.faq__question {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-align: left;
+    line-height: 120%;
+    color: var(--yellow);
+    width: 100%;
+    margin: 25px 0 10px 0;
+    word-wrap: break-word;
+}
+
+.faq__answer {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-align: left;
+    line-height: 150%;
+    color: var(--blue);
+    width: 100%;
+    word-wrap: break-word;
+}
+
+/* faq end*/
+
+/* contact start*/
+
+.contact {
+    width: 100%;
+    height: 700px;
+    left: 0;
+    top: 0;
+    background-image: url("../img/contact_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: 50%, 50%;
+    background-attachment: scroll;
+    background-size: contain;
+}
+
+.contact::before {
+    content: "";
+    display: block;
+    height: 50px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--darkblue);
+}
+
+.contact__solanasail {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.contact__title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 36px;
+    letter-spacing: 5px;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 100%;
+    color: var(--blue);
+    width: 100%;
+    margin: 50px 0 10px 0;
+    word-wrap: break-word;
+}
+
+.contact__subtitle {
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 150%;
+    color: var(--blue);
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.contact__mail {
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-align: left;
+    line-height: 120%;
+    color: var(--yellow);
+    width: 100%;
+    margin: 0 0 25px 0;
+    word-wrap: break-word;
+}
+
+.contact__mail a {
+    text-decoration: none;
+    color: var(--yellow);
+}
+
+.contact__mail a:hover {
+    text-decoration: underline;
+    font-weight: 300;
+}
