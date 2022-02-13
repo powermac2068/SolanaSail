@@ -130,7 +130,7 @@ body {
     height: 50px;
     background-color: var(--blue);
     z-index: 7;
-    animation: navigation--animation 1s 3s linear both;
+    animation: navigation--animation 1s 3s ease-in-out both;
 }
 
 @keyframes navigation--animation {
@@ -152,9 +152,9 @@ body {
     font-weight: 300;
     font-size: 14px;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     text-decoration: none;
-    padding: 18px 18px;
+    padding: 18px 15px;
     color: var(--white);
     transition: .1s;
 }
