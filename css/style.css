@@ -20,7 +20,7 @@ body {
     scroll-behavior: smooth;
 }
 
-/* header start*/
+/* header start */
 
 .header {
     position: relative;
@@ -99,15 +99,15 @@ body {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 16px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     text-align: left;
     line-height: 120%;
     z-index: 5;
 }
 
-/* header end*/
+/* header end */
 
-/* navigation start*/
+/* navigation start */
 
 .nav {
     display: flex;
@@ -210,9 +210,9 @@ body {
     font-size: 40px;
 }
 
-/* navigation end*/
+/* navigation end */
 
-/* trading start*/
+/* trading start */
 
 .trading {
     width: 100%;
@@ -255,7 +255,7 @@ body {
     font-size: 36px;
     letter-spacing: 5px;
     text-align: left;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     line-height: 100%;
     color: var(--blue);
     width: 100%;
@@ -269,12 +269,12 @@ body {
 .trading__track__text {
     font-family: 'Lato',
     sans-serif;
-    font-weight: 700;
-    font-size: 12px;
+    font-weight: 300;
+    font-size: 14px;
     letter-spacing: 2px;
     text-align: left;
-    text-transform: uppercase;
-    line-height: 120%;
+    /* text-transform: uppercase; */
+    line-height: 150%;
     color: var(--yellow);
     width: 100%;
     margin: 0 0 20px 0;
@@ -318,9 +318,9 @@ body {
     color: var(--yellow);
 }
 
-/* trading end*/
+/* trading end */
 
-/* tokenomic start*/
+/* tokenomic start */
 
 .tokenomic {
     width: 100%;
@@ -361,14 +361,13 @@ body {
 }
 
 .tokenomic__text {
-    font-family: 'Lato',
-        sans-serif;
-    font-weight: 700;
-    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
     letter-spacing: 2px;
     text-align: left;
-    text-transform: uppercase;
-    line-height: 120%;
+    /* text-transform: uppercase; */
+    line-height: 150%;
     color: var(--yellow);
     width: 100%;
     margin: 0 0 20px 0;
@@ -383,9 +382,9 @@ body {
     margin: 0 auto;
 }
 
-/* tokenomic end*/
+/* tokenomic end */
 
-/* ecosystem start*/
+/* ecosystem start */
 
 .ecosystem {
     width: 100%;
@@ -426,14 +425,13 @@ body {
 }
 
 .ecosystem__text {
-    font-family: 'Lato',
-        sans-serif;
-    font-weight: 700;
-    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
     letter-spacing: 2px;
     text-align: left;
-    text-transform: uppercase;
-    line-height: 120%;
+    /* text-transform: uppercase; */
+    line-height: 150%;
     color: var(--yellow);
     width: 100%;
     margin: 0 0 20px 0;
@@ -448,9 +446,9 @@ body {
     margin: 0 auto;
 }
 
-/* ecosystem end*/
+/* ecosystem end */
 
-/* roadmap start*/
+/* roadmap start */
 
 .roadmap {
     width: 100%;
@@ -491,14 +489,13 @@ body {
 }
 
 .roadmap__text {
-    font-family: 'Lato',
-        sans-serif;
-    font-weight: 700;
-    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
     letter-spacing: 2px;
     text-align: left;
-    text-transform: uppercase;
-    line-height: 120%;
+    /* text-transform: uppercase; */
+    line-height: 150%;
     color: var(--yellow);
     width: 100%;
     margin: 0 0 20px 0;
@@ -513,9 +510,9 @@ body {
     margin: 0 auto;
 }
 
-/* roadmap end*/
+/* roadmap end */
 
-/* faq start*/
+/* faq start */
 
 .faq {
     width: 100%;
@@ -585,9 +582,9 @@ body {
     word-wrap: break-word;
 }
 
-/* faq end*/
+/* faq end */
 
-/* contact start*/
+/* contact start */
 
 .contact {
     width: 100%;
@@ -642,7 +639,7 @@ body {
 
 .contact__subtitle {
     font-family: 'Lato', sans-serif;
-    font-weight: 200;
+    font-weight: 100;
     font-size: 24px;
     letter-spacing: 2px;
     text-align: left;
@@ -676,9 +673,9 @@ body {
     font-weight: 700;
 }
 
-/* contact end*/
+/* contact end */
 
-/* footer start*/
+/* footer start */
 
 .footer {
 width: 100%;
@@ -707,7 +704,11 @@ top: 0;
     background-color: var(--darkblue);
 }
 
-.footer__twitter, .footer__discord, .footer__telegram, .footer__medium, .footer__reddit {
+.footer__twitter,
+.footer__discord,
+.footer__telegram,
+.footer__medium,
+.footer__reddit {
 width: 40px;
 height: 40px;
 margin: 0 10px;
