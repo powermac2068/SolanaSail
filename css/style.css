@@ -8,7 +8,7 @@
     --white: rgb(255,255,255);
     --yellow: rgb(255,182,43);
     --blue: rgb(0,158,227);
-    --darkblue: rgb(20,30,65);
+    --darkblue: rgb(5,24,64);
 }
 
 html {
@@ -30,7 +30,7 @@ body {
 }
 
 .header__animation {
-    animation: background--animation 2s 1 ease-in-out;
+    animation: background--animation 3s 1 ease-in-out;
 }
 
 @keyframes background--animation {
@@ -71,7 +71,7 @@ body {
     left: 0;
     top: 0;
     width: 100%;
-    z-index: 4;
+    z-index: 3;
 }
 
 .header__logo--image {
@@ -102,7 +102,7 @@ body {
     letter-spacing: 1px;
     text-align: left;
     line-height: 120%;
-    z-index: 4;
+    z-index: 5;
 }
 
 /* header end*/
@@ -114,7 +114,7 @@ body {
     justify-content: space-between;
     align-items: flex-end;
     flex-direction: column;
-    z-index: 2;
+    z-index: 6;
     position: fixed;
 }
 
@@ -129,8 +129,8 @@ body {
     width: 100%;
     height: 50px;
     background-color: var(--blue);
-    z-index: 3;
-    animation: navigation--animation 1s 2s cubic-bezier(0.1, 0.8, 0.8, 1) both;
+    z-index: 7;
+    animation: navigation--animation 1s 3s ease-in-out both;
 }
 
 @keyframes navigation--animation {
@@ -144,7 +144,6 @@ body {
 .navigation__menu {
     display: flex;
     list-style: none;
-    z-index: 5;
 }
 
 .menu__link {
@@ -192,7 +191,7 @@ body {
     color: var(--blue);
     border-radius: 5px;
     cursor: pointer;
-    z-index: 5;
+    z-index: 0;
     visibility: hidden;
     transition-property: background-color, color;
     transition-duration: .3s;
@@ -325,14 +324,9 @@ body {
 
 .tokenomic {
     width: 100%;
-    height: 1900px;
+    height: auto;
     left: 0;
     top: 0;
-    background-image: url("../img/tokenomics_bg.jpg");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-attachment: scroll;
-    background-size: cover;
 }
 
 .tokenomic::before {
@@ -381,20 +375,23 @@ body {
     word-wrap: break-word;
 }
 
+.tokenomic__img {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
 /* tokenomic end*/
 
 /* ecosystem start*/
 
 .ecosystem {
     width: 100%;
-    height: 1200px;
+    height: auto;
     left: 0;
     top: 0;
-    background-image: url("../img/ecosystem_bg.jpg");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-attachment: scroll;
-    background-size: cover;
 }
 
 .ecosystem::before {
@@ -443,20 +440,23 @@ body {
     word-wrap: break-word;
 }
 
+.ecosystem__img {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
 /* ecosystem end*/
 
 /* roadmap start*/
 
 .roadmap {
     width: 100%;
-    height: 900px;
+    height: auto;
     left: 0;
     top: 0;
-    background-image: url("../img/roadmap_bg.jpg");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-attachment: scroll;
-    background-size: cover;
 }
 
 .roadmap::before {
@@ -503,6 +503,14 @@ body {
     width: 100%;
     margin: 0 0 20px 0;
     word-wrap: break-word;
+}
+
+.roadmap__img {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
 }
 
 /* roadmap end*/
@@ -583,14 +591,9 @@ body {
 
 .contact {
     width: 100%;
-    height: 700px;
+    height: auto;
     left: 0;
     top: 0;
-    background-image: url("../img/contact_bg.jpg");
-    background-repeat: no-repeat;
-    background-position: 50%, 50%;
-    background-attachment: scroll;
-    background-size: contain;
 }
 
 .contact::before {
@@ -604,10 +607,23 @@ body {
 
 .contact__solanasail {
     display: flex;
-    flex-direction: column;
     width: 45%;
     height: 100%;
     margin: 0 auto;
+}
+
+.contact__img {
+    left: 0;
+    top: 0;
+    width: auto;
+    height: 500px;
+}
+
+.contact__data {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
 }
 
 .contact__title {
@@ -639,7 +655,7 @@ body {
 
 .contact__mail {
     font-family: 'Lato', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 16px;
     letter-spacing: 2px;
     text-align: left;
@@ -657,5 +673,9 @@ body {
 
 .contact__mail a:hover {
     text-decoration: underline;
-    font-weight: 300;
+    font-weight: 700;
 }
+
+/* contact end*/
+
+/* footer start*/
