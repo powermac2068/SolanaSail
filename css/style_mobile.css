@@ -1,0 +1,223 @@
+@media (max-width: 430px) {
+
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .header__background {
+        display: none;
+    }
+
+    .header__bg__mobile {
+
+        display: block;
+        width: 100%;
+        height: auto;
+        left: 0;
+        top: 0;
+    }
+
+    .header__bg__mobile--img {
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .header__logo {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 50%;
+        height: auto;
+        margin: 10vh auto 0;
+    }
+
+    .header__logo--subtxt {
+        text-align: center;
+        font-size: 1.5vh;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .nav__top {
+        bottom: 80px;
+        right: 10px;
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .trading {
+        background-image: none;
+    }
+
+    .trade__img__mobile {
+        display: block;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .trading__sail,
+    .trading__gsail,
+    .trading__liquidity,
+    .trading__track {
+        width: 90%;
+    }
+
+    .trading__sail__title,
+    .trading__gsail__title,
+    .trading__liquidity__title,
+    .trading__track__title {
+        font-size: 32px;
+    }
+
+    .trading__sail__list,
+    .trading__gsail__list,
+    .trading__liquidity__list {
+        width: 100%;
+    }
+
+    .trading__container {
+        width: 44%;
+        margin: 20px 20px 20px 0;
+    }
+
+
+    .tokenomic__sail_gsail {
+        width: 90%;
+    }
+
+    .tokenomic__title {
+        font-size: 32px;
+    }
+
+    .tokenomic__img {
+        display: none;
+    }
+
+    .tokenomic__img__mobile {
+        display: block;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+
+    .ecosystem__sail_gsail {
+        width: 90%;
+    }
+
+    .ecosystem__title {
+        font-size: 32px;
+    }
+
+    .ecosystem__img {
+        display: none;
+    }
+
+    .ecosystem__img__mobile {
+        display: block;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+
+    .roadmap__solanasail {
+        width: 90%;
+    }
+
+    .roadmap__title {
+        font-size: 32px;
+    }
+
+    .roadmap__img {
+        display: none;
+    }
+
+    .roadmap__img__mobile {
+        display: block;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+
+    .faq {
+        background-image: none;
+        height: auto;
+    }
+
+    .faq__solanasail {
+        width: 90%;
+    }
+
+    .faq__title {
+        font-size: 32px;
+    }
+
+
+    .contact {
+        background-image: none;
+    }
+
+    .contact__solanasail {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 90%;
+    }
+
+    .contact__data {
+        width: 100%;
+    }
+
+    .contact__img {
+        display: none;
+    }
+
+    .contact__img__mobile {
+        display: block;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        margin: 50px auto 0;
+    }
+
+    .contact__title {
+        font-size: 32px;
+        margin: 20px 0 10px 0;
+    }
+
+
+    .footer__social {
+        justify-content: space-evenly;
+    }
+
+    .footer__twitter,
+    .footer__discord,
+    .footer__telegram,
+    .footer__medium,
+    .footer__reddit {
+        margin: 0;
+    }
+
+}

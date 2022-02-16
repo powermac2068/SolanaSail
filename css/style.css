@@ -41,6 +41,10 @@ body {
     100% {}
 }
 
+.header__bg__mobile {
+    display: none;
+}
+
 .header__background {
     position: absolute;
     left: 0;
@@ -52,7 +56,6 @@ body {
     background-position: center;
     background-attachment: scroll;
     background-size: cover;
-    z-index: 1;
 }
 
 .header__logo {
@@ -60,7 +63,6 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    z-index: 2;
     left: 52%;
     top: 50%;
     transform: translate(0,-50%);
@@ -71,7 +73,6 @@ body {
     left: 0;
     top: 0;
     width: 100%;
-    z-index: 3;
 }
 
 .header__logo--image {
@@ -82,7 +83,6 @@ body {
     left: 0;
     top: 0;
     width: 100%;
-    z-index: 4;
 }
 
 .header__logo--svg {
@@ -102,7 +102,6 @@ body {
     letter-spacing: 2px;
     text-align: left;
     line-height: 120%;
-    z-index: 5;
 }
 
 /* header end */
@@ -114,7 +113,7 @@ body {
     justify-content: space-between;
     align-items: flex-end;
     flex-direction: column;
-    z-index: 6;
+    z-index: 1;
     position: fixed;
 }
 
@@ -129,7 +128,7 @@ body {
     width: 100%;
     height: 50px;
     background-color: var(--blue);
-    z-index: 7;
+    z-index: 2;
     animation: navigation--animation 1s 3s ease-in-out both;
 }
 
@@ -191,7 +190,6 @@ body {
     color: var(--blue);
     border-radius: 5px;
     cursor: pointer;
-    z-index: 0;
     visibility: hidden;
     transition-property: background-color, color;
     transition-duration: .3s;
@@ -216,7 +214,7 @@ body {
 
 .trading {
     width: 100%;
-    height: 100%;
+    height: auto;
     left: 0;
     top: 0;
     background-image: url("../img/trade_bg.jpg");
@@ -224,6 +222,10 @@ body {
     background-position: top;
     background-attachment: scroll;
     background-size: cover;
+}
+
+.trade__img__mobile {
+    display: none;
 }
 
 .trading::before {
@@ -255,7 +257,6 @@ body {
     font-size: 36px;
     letter-spacing: 5px;
     text-align: left;
-    /* text-transform: uppercase; */
     line-height: 100%;
     color: var(--blue);
     width: 100%;
@@ -273,7 +274,6 @@ body {
     font-size: 14px;
     letter-spacing: 2px;
     text-align: left;
-    /* text-transform: uppercase; */
     line-height: 150%;
     color: var(--yellow);
     width: 100%;
@@ -366,7 +366,6 @@ body {
     font-size: 14px;
     letter-spacing: 2px;
     text-align: left;
-    /* text-transform: uppercase; */
     line-height: 150%;
     color: var(--yellow);
     width: 100%;
@@ -380,6 +379,10 @@ body {
     width: 100%;
     height: auto;
     margin: 0 auto;
+}
+
+.tokenomic__img__mobile {
+    display: none;
 }
 
 /* tokenomic end */
@@ -430,7 +433,6 @@ body {
     font-size: 14px;
     letter-spacing: 2px;
     text-align: left;
-    /* text-transform: uppercase; */
     line-height: 150%;
     color: var(--yellow);
     width: 100%;
@@ -444,6 +446,10 @@ body {
     width: 100%;
     height: auto;
     margin: 0 auto;
+}
+
+.ecosystem__img__mobile {
+    display: none;
 }
 
 /* ecosystem end */
@@ -494,7 +500,6 @@ body {
     font-size: 14px;
     letter-spacing: 2px;
     text-align: left;
-    /* text-transform: uppercase; */
     line-height: 150%;
     color: var(--yellow);
     width: 100%;
@@ -508,6 +513,10 @@ body {
     width: 100%;
     height: auto;
     margin: 0 auto;
+}
+
+.roadmap__img__mobile {
+    display: none;
 }
 
 /* roadmap end */
@@ -628,6 +637,10 @@ body {
     top: 0;
     width: auto;
     height: 500px;
+}
+
+.contact__img__mobile {
+    display: none;
 }
 
 .contact__data {
