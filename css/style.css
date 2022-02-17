@@ -108,6 +108,10 @@ body {
 
 /* navigation start */
 
+.nav__hamburger {
+    display: none;
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -610,7 +614,7 @@ body {
 .contact::before {
     content: "";
     display: block;
-    height: 20px;
+    height: 50px;
     width: 100%;
     margin: 0 auto;
     background-color: var(--darkblue);
