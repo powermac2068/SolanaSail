@@ -1,10 +1,5 @@
 @media (max-width: 1280px) {
 
-    .header__logo--subtxt {
-        font-size: 15px;
-    }
-
-
     .trading__container {
         width: 33%;
         margin: 15px 0px;
@@ -17,10 +12,6 @@
 
     .header__logo {
         width: 18vw;
-    }
-
-    .header__logo--subtxt {
-        font-size: 13px;
     }
 
 
@@ -68,7 +59,7 @@
         top: 0;
         width: 100%;
         height: auto;
-        margin: 0 auto 5vh;
+        margin: 0 auto 10vh;
     }
 
     .header__logo {
@@ -80,10 +71,6 @@
         margin: 0 auto;
     }
 
-    .header__logo--subtxt {
-        text-align: center;
-        font-size: 1.5vh;
-    }
 
     .navigation {
         display: none;
@@ -381,11 +368,7 @@
 @media (max-width: 375px) {
 
     .header__bg__mobile--img {
-        margin: -10vh auto 10vh;
-    }
-
-    .header__logo--subtxt {
-        font-size: 1.7vh;
+        margin: -10vh auto 15vh;
     }
 
 
@@ -483,13 +466,6 @@
 
 @media (max-width: 320px) {
 
-    .header__bg__mobile--img {
-        margin: -10vh auto 10vh;
-    }
-
-    .header__logo--subtxt {
-        font-size: 1.8vh;
-    }
 
     /* hamburger menu start */
 
