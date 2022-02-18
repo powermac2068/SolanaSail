@@ -59,7 +59,7 @@
         top: 0;
         width: 100%;
         height: auto;
-        margin: 0 auto 10vh;
+        margin: 0 auto 50px;
     }
 
     .header__logo {
@@ -327,7 +327,7 @@
         width: 100%;
     }
 
-    .contact__img {
+    .contact__yacht {
         display: none;
     }
 
@@ -368,7 +368,7 @@
 @media (max-width: 375px) {
 
     .header__bg__mobile--img {
-        margin: -10vh auto 15vh;
+        margin: -50px auto 100px;
     }
 
 
@@ -441,9 +441,6 @@
 
     .contact__subtitle {
         font-weight: 300;
-    }
-
-    .contact__subtitle {
         font-size: 20px;
     }
 
