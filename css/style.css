@@ -23,7 +23,6 @@ body {
 /* header start */
 
 .header__main {
-    position: relative;
     height: 100vh;
     overflow: hidden;
     opacity: 1;
@@ -59,7 +58,7 @@ body {
 }
 
 .header__logo {
-    position: absolute;
+    position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -93,7 +92,7 @@ body {
 .header__logo--subtxt {
     left: 0;
     top: 0;
-    width: 100%;
+    width: 90%;
 }
 
 .header__logo--svg2 {
@@ -216,8 +215,6 @@ body {
 .trading {
     width: 100%;
     height: auto;
-    left: 0;
-    top: 0;
     background-image: url("../img/trade_bg.jpg");
     background-repeat: no-repeat;
     background-position: top;
@@ -326,8 +323,6 @@ body {
 .tokenomic {
     width: 100%;
     height: auto;
-    left: 0;
-    top: 0;
 }
 
 .tokenomic::before {
@@ -393,8 +388,6 @@ body {
 .ecosystem {
     width: 100%;
     height: auto;
-    left: 0;
-    top: 0;
 }
 
 .ecosystem::before {
@@ -460,8 +453,6 @@ body {
 .roadmap {
     width: 100%;
     height: auto;
-    left: 0;
-    top: 0;
 }
 
 .roadmap::before {
@@ -527,8 +518,6 @@ body {
 .faq {
     width: 100%;
     height: 700px;
-    left: 0;
-    top: 0;
     background-image: url("../img/faq_bg.jpg");
     background-repeat: no-repeat;
     background-position: top;
@@ -599,8 +588,6 @@ body {
 .contact {
     width: 100%;
     height: auto;
-    left: 0;
-    top: 0;
     background-image: url("../img/contact_bg.jpg");
     background-repeat: no-repeat;
     background-position: top;
@@ -708,8 +695,6 @@ body {
 .footer__main {
 width: 100%;
 height: auto;
-left: 0;
-top: 0;
 }
 
 .footer::before {
