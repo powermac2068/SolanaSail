@@ -22,7 +22,7 @@ body {
 
 /* header start */
 
-.header {
+.header__main {
     position: relative;
     height: 100vh;
     overflow: hidden;
