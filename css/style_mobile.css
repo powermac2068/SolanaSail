@@ -14,27 +14,6 @@
         width: 18vw;
     }
 
-
-    .menu__link {
-        font-size: 12px;
-        padding: 18px 10px;
-    }
-
-
-    .trading__container {
-        width: 33%;
-        margin: 15px 0px;
-    }
-
-    .trading__link {
-        font-size: 13px;
-    }
-
-}
-
-
-@media (orientation: landscape) and (max-width: 1080px) {
-
     .menu__link {
         font-size: 11px;
         padding: 18px 10px;
@@ -45,6 +24,15 @@
     .trading__liquidity,
     .trading__track {
         width: 75%;
+    }
+
+    .trading__container {
+        width: 33%;
+        margin: 15px 0px;
+    }
+
+    .trading__link {
+        font-size: 13px;
     }
 
     .tokenomic__sail_gsail {
@@ -73,6 +61,165 @@
     .footer__medium,
     .footer__reddit {
         margin: 0 20px;
+    }
+
+}
+
+
+@media (max-width: 930px) {
+
+    .navigation {
+        display: none;
+    }
+
+    /* hamburger menu start */
+
+    #menu {
+        z-index: 2;
+    }
+
+    #menu-bar {
+        width: 45px;
+        height: 40px;
+        margin: 30px 0 0 20px;
+    }
+
+    .bar {
+        height: 5px;
+        width: 100%;
+        background-color: var(--blue);
+        display: block;
+        border-radius: 5px;
+        transition: 0.3s ease;
+    }
+
+    #bar1 {
+        transform: translateY(-4px);
+    }
+
+    #bar3 {
+        transform: translateY(4px);
+    }
+
+    .nav__hamburger {
+        transition: 0.3s ease;
+        display: none;
+    }
+
+    .nav__hamburger ul {
+        padding: 0 10px;
+    }
+
+    .nav__hamburger li {
+        list-style: none;
+        padding: 4px 0;
+    }
+
+    .nav__hamburger li a {
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        letter-spacing: 2px;
+        text-align: left;
+        color: var(--white);
+        text-decoration: none;
+    }
+
+    .menu-bg,
+    #menu {
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+
+    .menu-bg {
+        z-index: 1;
+        width: 0;
+        height: 0;
+        margin: 30px 0 20px 20px;
+        background-color: var(--blue);
+        border-radius: 50%;
+        transition: 0.3s ease;
+    }
+
+    .change {
+        display: block;
+    }
+
+    .change .bar {
+        background-color: var(--white);
+    }
+
+    .change #bar1 {
+        transform: translateY(4px) rotateZ(-45deg);
+    }
+
+    .change #bar2 {
+        opacity: 0;
+    }
+
+    .change #bar3 {
+        transform: translateY(-6px) rotateZ(45deg);
+    }
+
+    .change-bg {
+        width: 400px;
+        height: 600px;
+        transform: translate(-60%, -20%);
+    }
+
+    /* hamburger menu end */
+
+    .trading__sail,
+    .trading__gsail,
+    .trading__liquidity,
+    .trading__track {
+        width: 80%;
+    }
+
+    .tokenomic__sail_gsail {
+        width: 80%;
+    }
+
+    .ecosystem__sail_gsail {
+        width: 80%;
+    }
+
+    .roadmap__solanasail {
+        width: 80%;
+    }
+
+    .faq__solanasail {
+        width: 80%;
+    }
+
+    .contact__solanasail {
+        width: 80%;
+    }
+
+    .contact__yacht {
+        top: 50%;
+        transform: translate(0, 10%);
+    }
+
+    .contact__img {
+        width: auto;
+        height: 400px;
+    }
+
+}
+
+
+@media (max-width: 680px) {
+
+    .contact__yacht {
+        top: 50%;
+        transform: translate(0, 20%);
+    }
+
+    .contact__img {
+        width: auto;
+        height: 350px;
     }
 
 }
