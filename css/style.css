@@ -29,7 +29,16 @@ body {
 }
 
 .header__animation {
-    animation: background--animation 3s 1 ease-in-out;
+    -webkit-animation: background--animation 3s 1 ease-in-out;
+            animation: background--animation 3s 1 ease-in-out;
+}
+
+@-webkit-keyframes background--animation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {}
 }
 
 @keyframes background--animation {
@@ -129,7 +138,16 @@ body {
     height: 50px;
     background-color: var(--blue);
     z-index: 2;
-    animation: navigation--animation 1s 3s ease-in-out both;
+    -webkit-animation: navigation--animation 1s 3s ease-in-out both;
+            animation: navigation--animation 1s 3s ease-in-out both;
+}
+
+@-webkit-keyframes navigation--animation {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {}
 }
 
 @keyframes navigation--animation {
