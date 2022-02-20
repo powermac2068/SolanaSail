@@ -297,15 +297,15 @@ body {
     word-wrap: break-word;
 }
 
-.trading__sail__list,
-.trading__gsail__list,
-.trading__liquidity__list {
+.trading__sail__list {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     width: 70%;
 }
 
+.trading__gsail__list,
+.trading__liquidity__list,
 .trading__track__list {
     display: flex;
     flex-wrap: wrap;
