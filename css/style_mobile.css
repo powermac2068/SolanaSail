@@ -1,5 +1,32 @@
 @media (max-width: 1280px) {
 
+    .trading__sail,
+    .trading__gsail,
+    .trading__liquidity,
+    .trading__track {
+        width: 55%;
+    }
+
+    .tokenomic__sail_gsail {
+        width: 55%;
+    }
+
+    .ecosystem__sail_gsail {
+        width: 55%;
+    }
+
+    .roadmap__solanasail {
+        width: 55%;
+    }
+
+    .faq__solanasail {
+        width: 55%;
+    }
+
+    .contact__solanasail {
+        width: 55%;
+    }
+
     .trading__container {
         width: 33%;
         margin: 15px 0;
@@ -61,6 +88,13 @@
 }
 
 
+@media (max-width: 820px) {
+    .header__logo {
+        width: 28vw;
+    }
+}
+
+
 @media (max-width: 930px) {
 
     .navigation {
@@ -101,17 +135,16 @@
         display: none;
     }
 
-    .nav__hamburger ul {
-        padding: 0 10px;
+    .nav__hamburger__list {
+        padding: 0 20px;
     }
 
-    .nav__hamburger li {
+    .nav__hamburger__elem {
         list-style: none;
         padding: 4px 0;
     }
 
-    .nav__hamburger li a {
-        font-family: 'Lato', sans-serif;
+    .nav__hamburger__link {
         font-weight: 300;
         font-size: 16px;
         letter-spacing: 2px;
@@ -173,12 +206,17 @@
     }
 
     .trading__sail__title,
-    .trading__gsail__title,
     .trading__liquidity__title,
     .trading__track__title {
         font-weight: 300;
         font-size: 32px;
-        margin: 30px 0 10px 0;
+        margin: 10px 0 10px 0;
+    }
+
+    .trading__gsail__title {
+        font-weight: 300;
+        font-size: 32px;
+        margin: 50px 0 10px 0;
     }
 
     .trading__sail__text,
@@ -186,6 +224,11 @@
     .trading__liquidity__text,
     .trading__track__text {
         font-size: 12px;
+    }
+
+    .trading__gears {
+        width: 20%;
+        margin: 30px auto;
     }
 
     .tokenomic__sail_gsail {
@@ -375,7 +418,7 @@
         margin: 30px 0 20px 20px;
     }
 
-    .nav__hamburger li {
+    .nav__hamburger__elem {
         padding: 10px 0;
     }
 
@@ -414,6 +457,20 @@
         width: 90%;
     }
 
+    .trading__sail__title,
+    .trading__liquidity__title,
+    .trading__track__title {
+        font-weight: 300;
+        font-size: 32px;
+        margin: 40px 0 10px 0;
+    }
+
+    .trading__gsail__title {
+        font-weight: 300;
+        font-size: 32px;
+        margin: 40px 0 10px 0;
+    }
+
     .trading__sail__list,
     .trading__gsail__list,
     .trading__liquidity__list {
@@ -427,6 +484,17 @@
 
     .trading__link {
         font-size: 16px;
+    }
+
+    .trading__gears {
+        width: 40%;
+        margin: 30px auto 0;
+    }
+
+    .trading__gears__sail {
+        display: block;
+        width: 40%;
+        margin: 30px auto 0;
     }
 
     .tokenomic__sail_gsail {
@@ -649,27 +717,8 @@
         transform: translateY(5px);
     }
 
-    .nav__hamburger li {
-        list-style: none;
+    .nav__hamburger__elem {
         padding: 8px 0;
-    }
-
-    .menu-bg {
-        z-index: 1;
-        width: 0;
-        height: 0;
-        margin: 30px 0 20px 20px;
-        background-color: var(--blue);
-        border-radius: 50%;
-        transition: 0.3s ease;
-    }
-
-    .change #bar1 {
-        transform: translateY(4px) rotateZ(-45deg);
-    }
-
-    .change #bar2 {
-        opacity: 0;
     }
 
     .change #bar3 {
@@ -682,10 +731,10 @@
         transform: translate(-65%, -20%);
     }
 
+    /* hamburger menu end */
+
     .trading__link {
         font-size: 12px;
     }
-
-    /* hamburger menu end */
 
 }

@@ -18,6 +18,7 @@ html {
 body {
     background-color: var(--darkblue);
     scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
 }
 
 /* header start */
@@ -165,7 +166,6 @@ body {
 
 .menu__link {
     position: relative;
-    font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 14px;
     text-transform: uppercase;
@@ -265,10 +265,8 @@ body {
 }
 
 .trading__sail__title,
-.trading__gsail__title,
 .trading__liquidity__title,
 .trading__track__title {
-    font-family: 'Lato', sans-serif;
     font-weight: 100;
     font-size: 36px;
     letter-spacing: 5px;
@@ -276,7 +274,19 @@ body {
     line-height: 100%;
     color: var(--blue);
     width: 100%;
-    margin: 50px 0 10px 0;
+    margin: 10px 0 10px 0;
+    word-wrap: break-word;
+}
+
+.trading__gsail__title {
+    font-weight: 100;
+    font-size: 36px;
+    letter-spacing: 5px;
+    text-align: left;
+    line-height: 100%;
+    color: var(--blue);
+    width: 100%;
+    margin: 70px 0 10px 0;
     word-wrap: break-word;
 }
 
@@ -284,8 +294,6 @@ body {
 .trading__gsail__text,
 .trading__liquidity__text,
 .trading__track__text {
-    font-family: 'Lato',
-    sans-serif;
     font-weight: 300;
     font-size: 14px;
     letter-spacing: 2px;
@@ -297,14 +305,14 @@ body {
     word-wrap: break-word;
 }
 
-.trading__sail__list {
+.trading__sail__list,
+.trading__gsail__list {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     width: 70%;
 }
 
-.trading__gsail__list,
 .trading__liquidity__list,
 .trading__track__list {
     display: flex;
@@ -320,7 +328,6 @@ body {
 }
 
 .trading__link {
-    font-family: 'Lato', sans-serif;
     font-weight: 900;
     font-size: 14px;
     text-transform: uppercase;
@@ -332,6 +339,26 @@ body {
 
 .trading__link:hover {
     color: var(--yellow);
+}
+
+.trading__gears,
+.trading__gears__sail {
+    left: 0;
+    top: 0;
+    width: 10%;
+    height: auto;
+    margin: 50px auto;
+}
+
+.trading__gears__sail {
+    display: none;
+}
+
+.trading__gears--img {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
 }
 
 /* trading end */
@@ -361,7 +388,6 @@ body {
 }
 
 .tokenomic__title {
-    font-family: 'Lato', sans-serif;
     font-weight: 100;
     font-size: 36px;
     letter-spacing: 5px;
@@ -375,7 +401,6 @@ body {
 }
 
 .tokenomic__text {
-    font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 14px;
     letter-spacing: 2px;
@@ -426,7 +451,6 @@ body {
 }
 
 .ecosystem__title {
-    font-family: 'Lato', sans-serif;
     font-weight: 100;
     font-size: 36px;
     letter-spacing: 5px;
@@ -440,7 +464,6 @@ body {
 }
 
 .ecosystem__text {
-    font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 14px;
     letter-spacing: 2px;
@@ -491,7 +514,6 @@ body {
 }
 
 .roadmap__title {
-    font-family: 'Lato', sans-serif;
     font-weight: 100;
     font-size: 36px;
     letter-spacing: 5px;
@@ -505,7 +527,6 @@ body {
 }
 
 .roadmap__text {
-    font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 14px;
     letter-spacing: 2px;
@@ -561,7 +582,6 @@ body {
 }
 
 .faq__title {
-    font-family: 'Lato', sans-serif;
     font-weight: 100;
     font-size: 36px;
     letter-spacing: 5px;
@@ -575,7 +595,6 @@ body {
 }
 
 .faq__question {
-    font-family: 'Lato', sans-serif;
     font-weight: 700;
     font-size: 16px;
     letter-spacing: 2px;
@@ -588,7 +607,6 @@ body {
 }
 
 .faq__answer {
-    font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 14px;
     letter-spacing: 2px;
@@ -657,7 +675,6 @@ body {
 }
 
 .contact__title {
-    font-family: 'Lato', sans-serif;
     font-weight: 100;
     font-size: 36px;
     letter-spacing: 5px;
@@ -671,7 +688,6 @@ body {
 }
 
 .contact__subtitle {
-    font-family: 'Lato', sans-serif;
     font-weight: 100;
     font-size: 24px;
     letter-spacing: 2px;
@@ -684,7 +700,6 @@ body {
 }
 
 .contact__mail {
-    font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 16px;
     letter-spacing: 2px;

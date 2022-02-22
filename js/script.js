@@ -34,7 +34,7 @@ navigation.addEventListener('click', (evt) => {
     });
 });
 
-function menuOnClick() {
+menuOnClick = () => {
     document.getElementById("menu-bar").classList.toggle("change");
     document.getElementById("nav__hamburger").classList.toggle("change");
     document.getElementById("menu-bg").classList.toggle("change-bg");
