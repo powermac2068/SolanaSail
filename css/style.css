@@ -247,7 +247,7 @@ body {
 .trading::before {
     content: "";
     display: block;
-    height: 20px;
+    height: 70px;
     width: 100%;
     margin: 0 auto;
     background-color: var(--darkblue);
